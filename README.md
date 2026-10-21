@@ -1,46 +1,73 @@
 ## 1. Giới thiệu
 Trong bài tập cá nhân môn Phát triển ứng dụng WEB/TMĐT, em lựa chọn website Hasaki.vn làm website tham khảo để khảo sát, phân tích giao diện và đề xuất cải tiến trải nghiệm mua sắm trực tuyến. Hasaki là website thương mại điện tử hoạt động trong lĩnh vực bán lẻ mỹ phẩm, sản phẩm chăm sóc cá nhân, gia dụng và nhiều mặt hàng phục vụ nhu cầu tiêu dùng hằng ngày. Ngoài cung cấp các sản phẩm làm đẹp, Hasaki còn giới thiệu dịch vụ chăm sóc sắc đẹp tại hệ thống Hasaki Clinic và các cơ sở liên quan. Website có nhiều nhóm sản phẩm, thương hiệu và mức giá khác nhau, đáp ứng nhu cầu của người tiêu dùng từ chăm sóc da, trang điểm đến chăm sóc cá nhân và mua sắm các mặt hàng thiết yếu. Các khu vực như trang chủ, danh mục sản phẩm, chi tiết sản phẩm, tìm kiếm và giỏ hàng được tổ chức nhằm hỗ trợ khách hàng tìm kiếm thông tin, khám phá sản phẩm, xem giá và thực hiện quy trình mua sắm trực tuyến. Nhóm khách hàng mục tiêu của Hasaki là người có nhu cầu chăm sóc sắc đẹp (Học sinh, sinh viên và người trẻ..) tìm kiếm các sản phẩm chăm sóc cá nhân, gia dụng và nhu yếu phẩm. Họ muốn tra cứu thông tin, so sánh sản phẩm, tận dụng ưu đãi và đặt hàng trực tuyến.
+
 Sau khi khảo sát 5 khu vực giao diện chính của Hasaki, em lựa chọn khu vực Giỏ hàng để thực hiện cải tiến bằng HTML5 và CSS3. Đây là khu vực giúp khách hàng kiểm tra lại sản phẩm đã chọn, xem thông tin chi phí và chuẩn bị chuyển sang bước đặt hàng. Ý tưởng cải tiến của em tập trung vào hai điểm: bổ sung checkbox để khách hàng có thể chọn riêng những sản phẩm muốn thanh toán và bổ sung khu vực nhập mã giảm giá trực tiếp tại giỏ hàng. Em thực hiện giao diện minh họa với danh sách sản phẩm, khu vực voucher, phần tóm tắt hóa đơn và nút tiến hành đặt hàng. Mục tiêu là giúp bố cục dễ theo dõi hơn, làm rõ các thông tin quan trọng và hỗ trợ khách hàng kiểm soát lựa chọn mua sắm của mình.
 ## 2. Website tham khảo
 Tên website: Hasaki.vn
+
 Địa chỉ: https://hasaki.vn/
+
 Các khu vực đã khảo sát: Trang chủ, danh mục sản phẩm, chi tiết sản phẩm, tìm kiếm và giỏ hàng.
 ## 3. Chức năng
 Trang chủ: Hiển thị thông tin khuyến mãi, chương trình Flash Deal, danh mục sản phẩm, thương hiệu, sản phẩm bán chạy, top tìm kiếm, dịch vụ Hasaki Clinic và các gợi ý cá nhân hóa.
+
 Danh mục sản phẩm: Cho phép duyệt sản phẩm theo danh mục, thương hiệu và các thuộc tính như phân loại, dòng sản phẩm, loại, dung tích và công dụng.
+
 Chi tiết sản phẩm: Hiển thị hình ảnh, tên, giá và thông tin liên quan; có thanh tóm tắt sản phẩm khi cuộn trang và các tab nội dung.
+
 Tìm kiếm: Cho phép nhập từ khóa; hiển thị gợi ý từ khóa, sản phẩm kèm hình ảnh và giá, hỗ trợ lọc nhanh theo thương hiệu và tìm kiếm bằng từ khóa không dấu.
+
 Giỏ hàng: Tập hợp sản phẩm đã chọn, cho phép điều chỉnh số lượng, xóa hoặc thêm vào danh sách yêu thích; hiển thị tạm tính, giảm giá, tổng cộng, nút tiến hành đặt hàng và gợi ý sản phẩm mua kèm.
 ## 4. Công nghệ sử dụng
 HTML5: Xây dựng cấu trúc trang, các khu vực nội dung, danh sách sản phẩm, thông tin hóa đơn và những thành phần giao diện.
+
 CSS3: Thiết kế màu sắc, kiểu chữ, khoảng cách, bố cục, hiệu ứng tương tác và khả năng hiển thị phù hợp với nhiều kích thước màn hình.
+
 Trong mã nguồn, em sử dụng các thẻ HTML có ý nghĩa ngữ nghĩa như header, main, section, article, aside và footer. CSS sử dụng các kỹ thuật như biến CSS, Flexbox, Grid, hiệu ứng hover, transition, position: sticky và Media Queries để tổ chức giao diện và điều chỉnh bố cục theo kích thước màn hình.
 ## 5. Cách chạy website
 Tải hoặc giải nén thư mục dự án.
+
 Đảm bảo file index.html và file style.css được đặt đúng vị trí theo đường dẫn liên kết trong mã nguồn.
+
 Mở file index.html bằng trình duyệt web như Google Chrome, Microsoft Edge hoặc Safari.
+
 Kiểm tra giao diện trên máy tính, máy tính bảng và điện thoại bằng cách thay đổi kích thước cửa sổ trình duyệt.
 ## 6. Những cải tiến đã thực hiện
 Qua quá trình khảo sát, em nhận thấy giỏ hàng là khu vực phù hợp để cải tiến vì khách hàng cần kiểm tra sản phẩm và tổng chi phí trước khi đặt hàng. Em tập trung vào hai vấn đề:
-Chưa có khu vực nhập mã giảm giá hoặc lựa chọn voucher trực tiếp tại giỏ hàng.
-Chưa có checkbox riêng để chọn hoặc bỏ chọn từng sản phẩm khi muốn thanh toán một số món trước.
+
+- Chưa có khu vực nhập mã giảm giá hoặc lựa chọn voucher trực tiếp tại giỏ hàng.
+
+- Chưa có checkbox riêng để chọn hoặc bỏ chọn từng sản phẩm khi muốn thanh toán một số món trước.
+
 Nên em xây dựng giao diện giỏ hàng cải tiến với các thành phần:
-Danh sách 4 sản phẩm mẫu: Mỗi sản phẩm có hình ảnh, tên, giá và các thông tin liên quan.
-Checkbox chọn sản phẩm: Cho phép thể hiện lựa chọn đối với từng sản phẩm và có tùy chọn “Chọn tất cả”.
-Khu vực mã giảm giá: Bổ sung ô nhập mã, nút “Áp dụng” và liên kết xem mã ưu đãi.
-Tóm tắt hóa đơn: Trình bày tạm tính, giảm giá sản phẩm, phí vận chuyển và tổng cộng tạm tính.
-Nút tiến hành đặt hàng: Làm nổi bật hành động chính để người dùng dễ nhận biết.
-Khu vực sản phẩm gợi ý: Bổ sung các sản phẩm có thể được khách hàng quan tâm.
-Bố cục responsive: Điều chỉnh giao diện để phù hợp hơn với màn hình máy tính, máy tính bảng và điện thoại.
+
+- Danh sách 4 sản phẩm mẫu: Mỗi sản phẩm có hình ảnh, tên, giá và các thông tin liên quan.
+
+- Checkbox chọn sản phẩm: Cho phép thể hiện lựa chọn đối với từng sản phẩm và có tùy chọn “Chọn tất cả”.
+
+- Khu vực mã giảm giá: Bổ sung ô nhập mã, nút “Áp dụng” và liên kết xem mã ưu đãi.
+
+- Tóm tắt hóa đơn: Trình bày tạm tính, giảm giá sản phẩm, phí vận chuyển và tổng cộng tạm tính.
+
+- Nút tiến hành đặt hàng: Làm nổi bật hành động chính để người dùng dễ nhận biết.
+
+- Khu vực sản phẩm gợi ý: Bổ sung các sản phẩm có thể được khách hàng quan tâm.
+
+- Bố cục responsive: Điều chỉnh giao diện để phù hợp hơn với màn hình máy tính, máy tính bảng và điện thoại.
+
 Các cải tiến trên hướng đến việc giúp khách hàng dễ kiểm soát sản phẩm được chọn, theo dõi các khoản chi phí và nhận biết rõ hơn những thao tác cần thực hiện tại giỏ hàng.
 ## 7. Hỗ trợ từ AI
 Em sử dụng ChatGPT để hỗ trợ quá trình phân tích website tham khảo, đề xuất phương án cải tiến và xây dựng giao diện giỏ hàng bằng HTML5 và CSS3. Trong quá trình thực hiện, em sử dụng 3 prompt chính, tương ứng với ba giai đoạn: phân tích giao diện, đề xuất phương án thiết kế và tạo mã nguồn.
+
 Sau khi em cung cấp thông tin về website Hasaki.vn và yêu cầu phân tích 5 khu vực gồm trang chủ, danh mục sản phẩm, chi tiết sản phẩm, tìm kiếm và giỏ hàng, AI hỗ trợ nhận xét các chức năng, thành phần giao diện, điểm thuận tiện, vấn đề có thể phát sinh và hướng cải tiến cho từng khu vực.
+
 AI đưa ra một số nhận xét như sau:
-Trang chủ: Có nhiều khu vực hiển thị khuyến mãi, Flash Deal, sản phẩm bán chạy, top tìm kiếm và các danh mục nối tiếp nhau. AI nhận xét rằng lượng nội dung lớn có thể làm giảm khả năng phân biệt thông tin quan trọng, từ đó đề xuất ưu tiên banner chính, thanh tìm kiếm và các chương trình nổi bật; những nội dung còn lại có thể được sắp xếp theo mức độ ưu tiên hoặc trình bày bằng tab, carousel và nút xem thêm.
-Danh mục sản phẩm: Có nhiều nhóm danh mục và bộ lọc theo thương hiệu, phân loại, dòng sản phẩm, dung tích, công dụng. AI đề xuất tổ chức bộ lọc rõ ràng hơn, giúp người dùng thu hẹp phạm vi tìm kiếm và dễ lựa chọn sản phẩm.
-Chi tiết sản phẩm: AI xem xét cách trình bày hình ảnh, tên, giá và thông tin sản phẩm; đồng thời gợi ý cần chú ý đến cách tổ chức thông tin và các nút thao tác để người dùng dễ theo dõi.
-Tìm kiếm: AI đề xuất cải thiện khu vực tìm kiếm và gợi ý nhanh để người dùng tiếp cận sản phẩm thuận tiện hơn.
-Giỏ hàng: AI đề xuất xem xét lại bố cục danh sách sản phẩm và khu vực tóm tắt hóa đơn, nhằm giúp khách hàng dễ kiểm tra sản phẩm và chi phí trước khi đặt hàng.
+- Trang chủ: Có nhiều khu vực hiển thị khuyến mãi, Flash Deal, sản phẩm bán chạy, top tìm kiếm và các danh mục nối tiếp nhau. AI nhận xét rằng lượng nội dung lớn có thể làm giảm khả năng phân biệt thông tin quan trọng, từ đó đề xuất ưu tiên banner chính, thanh tìm kiếm và các chương trình nổi bật; những nội dung còn lại có thể được sắp xếp theo mức độ ưu tiên hoặc trình bày bằng tab, carousel và nút xem thêm.
+- Danh mục sản phẩm: Có nhiều nhóm danh mục và bộ lọc theo thương hiệu, phân loại, dòng sản phẩm, dung tích, công dụng. AI đề xuất tổ chức bộ lọc rõ ràng hơn, giúp người dùng thu hẹp phạm vi tìm kiếm và dễ lựa chọn sản phẩm.
+- Chi tiết sản phẩm: AI xem xét cách trình bày hình ảnh, tên, giá và thông tin sản phẩm; đồng thời gợi ý cần chú ý đến cách tổ chức thông tin và các nút thao tác để người dùng dễ theo dõi.
+- Tìm kiếm: AI đề xuất cải thiện khu vực tìm kiếm và gợi ý nhanh để người dùng tiếp cận sản phẩm thuận tiện hơn.
+- Giỏ hàng: AI đề xuất xem xét lại bố cục danh sách sản phẩm và khu vực tóm tắt hóa đơn, nhằm giúp khách hàng dễ kiểm tra sản phẩm và chi phí trước khi đặt hàng.
+
 Sau khi phân tích, AI đề xuất 3 hướng cải tiến để em lựa chọn gồm cải tiến bộ lọc tại trang danh mục, cải tiến hộp tìm kiếm/gợi ý nhanh và cải tiến bố cục giỏ hàng. Qua kiểm tra, em nhận thấy khu vực tìm kiếm đã có gợi ý từ khóa và sản phẩm kèm hình ảnh, giá, đồng thời hỗ trợ tìm kiếm không dấu, có mục gợi ý tìm kiếm nhanh. Trang danh mục sản phẩm dù bộ lọc hơi dài nhưng nó vẫn đầy đủ, khách hàng dễ dàng chọn những mục theo mong muốn của mình. Em không lựa chọn hai khu vực này làm trọng tâm cải tiến. Em chọn giỏ hàng vì muốn bổ sung checkbox để lựa chọn sản phẩm cần thanh toán và khu vực nhập mã giảm giá trực tiếp tại giỏ hàng. Em lựa chọn khu vực giỏ hàng, em yêu cầu AI đề xuất bố cục và các thành phần cần thiết cho giao diện cải tiến, tập trung vào việc bổ sung ô nhập mã giảm giá và checkbox chọn sản phẩm. AI đề xuất chia giao diện thành hai khu vực chính: danh sách sản phẩm ở một bên và khối tóm tắt hóa đơn ở bên còn lại. Danh sách sản phẩm có thể bao gồm hình ảnh, tên, giá và checkbox để thể hiện lựa chọn của người dùng. Khối hóa đơn trình bày các thông tin như tạm tính, giảm giá, phí vận chuyển và tổng cộng. AI cũng đề xuất bổ sung ô nhập mã giảm giá, nút áp dụng mã, liên kết xem mã ưu đãi, nút tiến hành đặt hàng và khu vực sản phẩm gợi ý. Về kỹ thuật, AI gợi ý sử dụng HTML5 semantic tags, CSS Grid, Flexbox, position: sticky và Media Queries để xây dựng bố cục, hỗ trợ theo dõi hóa đơn khi cuộn và điều chỉnh giao diện theo kích thước màn hình.
+
 Sau khi thống nhất phương án thiết kế, em yêu cầu AI tạo giao diện thương mại điện tử bằng HTML5 và CSS3, có ít nhất 4 sản phẩm mẫu, mỗi sản phẩm có hình ảnh, tên, giá và nút thao tác. AI hỗ trợ tạo mã nguồn giao diện ban đầu với danh sách 4 sản phẩm mẫu, checkbox chọn sản phẩm, tùy chọn chọn tất cả, khu vực nhập mã giảm giá, phần tóm tắt hóa đơn, nút tiến hành đặt hàng và khu vực sản phẩm gợi ý. AI cũng giải thích cách chạy trang web và những phần cần kiểm tra sau khi hoàn thành. Từ mã nguồn được đề xuất, em tiếp tục kiểm tra cấu trúc HTML, cách tổ chức CSS và khả năng hiển thị trên các kích thước màn hình khác nhau bằng Chrome DevTools. Sau khi kiểm tra giao diện, em cũng điều chỉnh CSS để xử lý vấn đề cuộn của khối tóm tắt hóa đơn trên máy tính bảng (Ipad Pro 13 1032 x 1376) bằng cách chuyển bố cục sang một cột và đưa khối hóa đơn về position: static ở kích thước màn hình phù hợp.
