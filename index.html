@@ -1,76 +1,214 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZBK1R1Q76"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CZBK1R1Q76');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giỏ hàng | Hasaki - Giao diện cải tiến</title>
   <link rel="stylesheet" href="css/style.css">
-G-CZBK1R1Q76
 </head>
 <body>
-<header class="site-header"><div class="topbar">
-  <a class="brand" href="#">HASAKI<span>.</span></a>
-  <nav class="main-nav"><a href="#">Trang chủ</a><a href="#">Mỹ phẩm</a><a href="#">Chăm sóc da</a><a href="#">Khuyến mãi</a></nav>
-  <div class="header-actions"><a href="#">Tài khoản</a><a class="cart-link" href="#">Giỏ hàng <span>4</span></a></div>
-</div></header>
+<header class="site-header">
+  <div class="topbar">
+    <a class="brand" href="#">HASAKI<span>.</span></a>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="#">Trang chủ</a>
+      <a href="#">Mỹ phẩm</a>
+      <a href="#">Chăm sóc da</a>
+      <a href="#">Khuyến mãi</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#">Tài khoản</a>
+      <a class="cart-link" href="#">Giỏ hàng <span>4</span></a>
+    </div>
+  </div>
+</header>
 <main class="container">
-  <div class="breadcrumb"><a href="#">Trang chủ</a><span>/</span><strong>Giỏ hàng</strong></div>
-  <section class="page-intro"><p class="eyebrow">KIỂM TRA ĐƠN HÀNG</p><h1>Giỏ hàng của bạn</h1>
+  <nav class="breadcrumb" aria-label="Đường dẫn trang">
+    <a href="#">Trang chủ</a><span>/</span><strong>Giỏ hàng</strong>
+  </nav>
+  <section class="page-intro">
+    <p class="eyebrow">KIỂM TRA ĐƠN HÀNG</p>
+    <h1>Giỏ hàng của bạn</h1>
     <p class="intro-text">Kiểm tra sản phẩm, chọn món muốn mua và áp dụng ưu đãi trước khi đặt hàng.</p>
-    <div class="steps"><span class="step active"><b>01</b> Giỏ hàng</span><span class="step-line"></span><span class="step"><b>02</b> Đặt hàng</span></div>
+    <div class="steps">
+      <span class="step active"><b>01</b> Giỏ hàng</span>
+      <span class="step-line"></span>
+      <span class="step"><b>02</b> Đặt hàng</span>
+    </div>
   </section>
   <div class="cart-layout">
     <section class="products-panel">
-      <div class="section-heading"><div><h2>Sản phẩm đã chọn</h2><p>4 sản phẩm trong giỏ hàng</p></div><button class="text-button" type="button">Tiếp tục mua hàng →</button></div>
-      <label class="select-all"><input type="checkbox" checked><span>Chọn tất cả</span></label>
-      <article class="product-card"><input class="product-check" type="checkbox" checked aria-label="Chọn serum">
+      <div class="section-heading">
+        <div>
+          <h2>Sản phẩm đã chọn</h2>
+          <p>4 sản phẩm trong giỏ hàng</p>
+        </div>
+        <a class="text-button" href="#">Tiếp tục mua hàng →</a>
+      </div>
+      <label class="select-all">
+        <input type="checkbox" checked><span>Chọn tất cả</span>
+      </label>
+      <article class="product-card">
+        <input class="product-check" type="checkbox" checked aria-label="Chọn serum">
         <img class="product-image" src="images/product-demo.jpg" alt="Serum dưỡng da minh họa">
-        <div class="product-info"><span class="product-tag">BÁN CHẠY</span><h3>Serum dưỡng da phục hồi</h3><p class="variant">Dung tích: 30 ml</p><div class="product-actions"><button type="button">♡ Yêu thích</button><button type="button">Xóa</button></div></div>
-        <div class="product-price"><strong>249.000đ</strong><del>320.000đ</del><span class="discount">-22%</span><div class="quantity"><button type="button">−</button><span>1</span><button type="button">+</button></div></div>
+        <div class="product-info">
+          <span class="product-tag">BÁN CHẠY</span>
+          <h3>Serum dưỡng da phục hồi</h3>
+          <p class="variant">Dung tích: 30 ml</p>
+          <div class="product-actions">
+            <button type="button">♡ Yêu thích</button>
+            <button type="button">Xóa</button>
+          </div>
+        </div>
+        <div class="product-price">
+          <strong>249.000đ</strong>
+          <del>320.000đ</del>
+          <span class="discount">-22%</span>
+          <div class="quantity">
+            <button type="button">−</button><span>1</span><button type="button">+</button>
+          </div>
+        </div>
       </article>
-      <article class="product-card"><input class="product-check" type="checkbox" checked aria-label="Chọn kem chống nắng">
+      <article class="product-card">
+        <input class="product-check" type="checkbox" checked aria-label="Chọn kem chống nắng">
         <img class="product-image" src="images/product-demo.jpg" alt="Kem chống nắng minh họa">
-        <div class="product-info"><span class="product-tag">ƯU ĐÃI</span><h3>Kem chống nắng bảo vệ da</h3><p class="variant">Dung tích: 50 ml</p><div class="product-actions"><button type="button">♡ Yêu thích</button><button type="button">Xóa</button></div></div>
-        <div class="product-price"><strong>189.000đ</strong><del>250.000đ</del><span class="discount">-24%</span><div class="quantity"><button type="button">−</button><span>1</span><button type="button">+</button></div></div>
+        <div class="product-info">
+          <span class="product-tag">ƯU ĐÃI</span>
+          <h3>Kem chống nắng bảo vệ da</h3>
+          <p class="variant">Dung tích: 50 ml</p>
+          <div class="product-actions">
+            <button type="button">♡ Yêu thích</button>
+            <button type="button">Xóa</button>
+          </div>
+        </div>
+        <div class="product-price">
+          <strong>189.000đ</strong>
+          <del>250.000đ</del>
+          <span class="discount">-24%</span>
+          <div class="quantity">
+            <button type="button">−</button><span>1</span><button type="button">+</button>
+          </div>
+        </div>
       </article>
-      <article class="product-card"><input class="product-check" type="checkbox" checked aria-label="Chọn sữa rửa mặt">
+      <article class="product-card">
+        <input class="product-check" type="checkbox" checked aria-label="Chọn sữa rửa mặt">
         <img class="product-image" src="images/product-demo.jpg" alt="Sữa rửa mặt minh họa">
-        <div class="product-info"><span class="product-tag">ĐƯỢC YÊU THÍCH</span><h3>Sữa rửa mặt dịu nhẹ</h3><p class="variant">Dung tích: 150 ml</p><div class="product-actions"><button type="button">♡ Yêu thích</button><button type="button">Xóa</button></div></div>
-        <div class="product-price"><strong>129.000đ</strong><del>165.000đ</del><span class="discount">-22%</span><div class="quantity"><button type="button">−</button><span>1</span><button type="button">+</button></div></div>
+        <div class="product-info">
+          <span class="product-tag">ĐƯỢC YÊU THÍCH</span>
+          <h3>Sữa rửa mặt dịu nhẹ</h3>
+          <p class="variant">Dung tích: 150 ml</p>
+          <div class="product-actions">
+            <button type="button">♡ Yêu thích</button>
+            <button type="button">Xóa</button>
+          </div>
+        </div>
+        <div class="product-price">
+          <strong>129.000đ</strong>
+          <del>165.000đ</del>
+          <span class="discount">-22%</span>
+          <div class="quantity">
+            <button type="button">−</button><span>1</span><button type="button">+</button>
+          </div>
+        </div>
       </article>
-      <article class="product-card"><input class="product-check" type="checkbox" checked aria-label="Chọn toner">
+      <article class="product-card">
+        <input class="product-check" type="checkbox" checked aria-label="Chọn toner">
         <img class="product-image" src="images/product-demo.jpg" alt="Toner minh họa">
-        <div class="product-info"><span class="product-tag">GỢI Ý CHO BẠN</span><h3>Nước cân bằng da (Toner)</h3><p class="variant">Dung tích: 200 ml</p><div class="product-actions"><button type="button">♡ Yêu thích</button><button type="button">Xóa</button></div></div>
-        <div class="product-price"><strong>159.000đ</strong><del>210.000đ</del><span class="discount">-24%</span><div class="quantity"><button type="button">−</button><span>1</span><button type="button">+</button></div></div>
+        <div class="product-info">
+          <span class="product-tag">GỢI Ý CHO BẠN</span>
+          <h3>Nước cân bằng da (Toner)</h3>
+          <p class="variant">Dung tích: 200 ml</p>
+          <div class="product-actions">
+            <button type="button">♡ Yêu thích</button>
+            <button type="button">Xóa</button>
+          </div>
+        </div>
+        <div class="product-price">
+          <strong>159.000đ</strong>
+          <del>210.000đ</del>
+          <span class="discount">-24%</span>
+          <div class="quantity">
+            <button type="button">−</button><span>1</span><button type="button">+</button>
+          </div>
+        </div>
       </article>
-      <div class="continue-box"><span>Chưa tìm được sản phẩm phù hợp?</span><a href="#">Khám phá thêm sản phẩm</a></div>
+      <div class="continue-box">
+        <span>Chưa tìm được sản phẩm phù hợp?</span>
+        <a href="#">Khám phá thêm sản phẩm</a>
+      </div>
     </section>
     <aside class="summary-panel">
-      <div class="summary-title"><h2>Hóa đơn của bạn</h2><span>4 món hàng</span></div>
-      <div class="voucher"><div class="voucher-heading"><span class="voucher-icon">%</span><div><strong>Mã giảm giá</strong><p>Nhập mã để xem ưu đãi áp dụng</p></div></div>
-        <div class="voucher-form"><label class="sr-only" for="voucher-code">Mã giảm giá</label><input id="voucher-code" type="text" placeholder="Nhập mã voucher"><button type="button">Áp dụng</button></div>
+      <div class="summary-title">
+        <h2>Hóa đơn của bạn</h2>
+        <span>4 món hàng</span>
+      </div>
+      <div class="voucher">
+        <div class="voucher-heading">
+          <span class="voucher-icon">%</span>
+          <div>
+            <strong>Mã giảm giá</strong>
+            <p>Nhập mã để xem ưu đãi áp dụng</p>
+          </div>
+        </div>
+        <div class="voucher-form">
+          <label class="sr-only" for="voucher-code">Mã giảm giá</label>
+          <input id="voucher-code" type="text" placeholder="Nhập mã voucher">
+          <button type="button">Áp dụng</button>
+        </div>
         <a class="voucher-link" href="#">Xem mã ưu đãi dành cho bạn →</a>
       </div>
-      <div class="bill-lines"><div><span>Tạm tính</span><strong>726.000đ</strong></div><div><span>Giảm giá sản phẩm</span><strong class="green">164.000đ</strong></div><div><span>Phí vận chuyển</span><span class="muted">Tính ở bước tiếp theo</span></div></div>
-      <div class="total-line"><span>Tổng cộng tạm tính</span><strong>562.000đ</strong></div>
+      <div class="bill-lines">
+        <div><span>Tạm tính</span><strong>726.000đ</strong></div>
+        <div><span>Giảm giá sản phẩm</span><strong class="green">164.000đ</strong></div>
+        <div><span>Phí vận chuyển</span><span class="muted">Tính ở bước tiếp theo</span></div>
+      </div>
+      <div class="total-line">
+        <span>Tổng cộng tạm tính</span><strong>562.000đ</strong>
+      </div>
       <p class="shipping-note">✓ Miễn phí vận chuyển theo điều kiện áp dụng</p>
       <button class="checkout-button" type="button">Tiến hành đặt hàng <span>→</span></button>
       <div class="secure-note">▣ Thông tin đơn hàng được hiển thị rõ ràng trước khi đặt</div>
       <div class="payment-note">✓ Kiểm tra lại sản phẩm và ưu đãi trước khi thanh toán</div>
     </aside>
   </div>
-  <section class="recommendations"><div class="section-heading"><div><h2>Thường được mua cùng</h2><p>Gợi ý thêm sản phẩm chăm sóc da</p></div><a href="#">Xem tất cả →</a></div>
-    <div class="recommendation-grid"><article><img src="images/product-demo.jpg" alt="Sản phẩm chăm sóc da"><div><strong>Mặt nạ cấp ẩm</strong><p>49.000đ</p></div></article><article><img src="images/product-demo.jpg" alt="Sản phẩm chăm sóc da"><div><strong>Tẩy trang dịu nhẹ</strong><p>119.000đ</p></div></article><article><img src="images/product-demo.jpg" alt="Sản phẩm chăm sóc da"><div><strong>Kem dưỡng ẩm</strong><p>199.000đ</p></div></article></div>
+  <section class="recommendations">
+    <div class="section-heading">
+      <div>
+        <h2>Thường được mua cùng</h2>
+        <p>Gợi ý thêm sản phẩm chăm sóc da</p>
+      </div>
+      <a href="#">Xem tất cả →</a>
+    </div>
+    <div class="recommendation-grid">
+      <article>
+        <img src="images/product-demo.jpg" alt="Mặt nạ cấp ẩm">
+        <div>
+          <strong>Mặt nạ cấp ẩm</strong>
+          <p>49.000đ</p>
+        </div>
+      </article>
+      <article>
+        <img src="images/product-demo.jpg" alt="Tẩy trang dịu nhẹ">
+        <div>
+          <strong>Tẩy trang dịu nhẹ</strong>
+          <p>119.000đ</p>
+        </div>
+      </article>
+      <article>
+        <img src="images/product-demo.jpg" alt="Kem dưỡng ẩm">
+        <div>
+          <strong>Kem dưỡng ẩm</strong>
+          <p>199.000đ</p>
+        </div>
+      </article>
+    </div>
   </section>
 </main>
-<footer><div class="footer-inner"><a class="brand" href="#">HASAKI<span>.</span></a><p>Giao diện minh họa phục vụ bài tập cải tiến UI thương mại điện tử.</p></div></footer>
-</body></html>
+<footer>
+  <div class="footer-inner">
+    <a class="brand" href="#">HASAKI<span>.</span></a>
+    <p>Giao diện minh họa phục vụ bài tập cải tiến UI thương mại điện tử.</p>
+  </div>
+</footer>
+</body>
+</html>
