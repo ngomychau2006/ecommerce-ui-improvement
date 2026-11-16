@@ -77,10 +77,10 @@ Mỗi `ExerciseXX/` có `index.html` riêng, cùng thư mục `css/`, `js/` và 
 
 ## GitHub Pages
 Thay `<TEN-REPO>` bằng tên repository của bạn:
-- Trang chủ: https://ngomychau2006.github.io/<TEN-REPO>/JavaScript-Labs/
-- Lab 08: https://ngomychau2006.github.io/<TEN-REPO>/JavaScript-Labs/Lab08/
-- Lab 09: https://ngomychau2006.github.io/<TEN-REPO>/JavaScript-Labs/Lab09/
-- Lab 10: https://ngomychau2006.github.io/<TEN-REPO>/JavaScript-Labs/Lab10/
+- Trang chủ: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/
+- Lab 08: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/Lab08/
+- Lab 09: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/Lab09/
+- Lab 10: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/Lab10/
 
 ## Hướng dẫn truy cập
 1. Mở trang chủ ở đường dẫn GitHub Pages phía trên.
