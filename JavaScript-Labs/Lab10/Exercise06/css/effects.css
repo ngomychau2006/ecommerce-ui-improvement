@@ -1,0 +1,29 @@
+main {
+    margin: 30px 30px;
+}
+
+#commandLine {
+    margin: 0;
+    border: solid 1px #ccc;
+    padding: 10px;
+    width: 635px;
+    height: 40px;
+}
+
+#btnFade, #btnFadeIn, #btnFadeOut {
+    float: left;
+    width: 90px;
+    height: 30px;
+}
+
+#btnSlide, #btnSlideUp, #btnSlideDown {
+    float: right;
+    width: 90px;
+    height: 30px;
+}
+
+main figure {
+    margin: 0;
+    padding: 10px;
+    display: none; /* ảnh ẩn ban đầu, hiện bằng fadeIn / slideDown */
+}

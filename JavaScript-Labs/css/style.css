@@ -1,0 +1,200 @@
+:root {
+  --primary: #006699; /* Xanh dương hiện đại, chuyên nghiệp */
+  --primary-hover: #004d73;
+  --bg-color: #f7f9fc; /* Nền xám nhạt giúp nổi bật các card trắng */
+  --text-main: #2b2d42;
+  --text-muted: #555555;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover { color: var(--primary-hover); }
+
+/* Thanh điều hướng (Navbar) */
+.bar {
+  background: #003355;
+  color: #ffffff;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.bar span:first-child { font-weight: 800; font-size: 1.25rem; letter-spacing: 0.5px; }
+.bar a { color: #d9e6f2; margin-left: 30px; font-weight: 500; font-size: 0.95rem; }
+.bar a:hover { color: #ffffff; text-decoration: none; }
+
+/* Khung nội dung chính */
+.wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+/* Hero Section (Phần giới thiệu đầu trang) - Căn giữa, mở rộng không gian */
+.hero {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  margin-bottom: 60px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+  max-width: 850px;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 800px;
+  margin: 0 auto 35px auto;
+}
+
+/* Thẻ thông tin cá nhân (Profile Card) */
+.id {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  background: #f0f5fa;
+  padding: 20px 45px 20px 25px;
+  border-radius: 50px; /* Bo tròn hoàn toàn 2 đầu */
+  border: 1px solid #e1e9f0;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 102, 153, 0.3);
+}
+.id dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 6px 20px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.id dt { color: var(--text-muted); font-weight: 500; }
+.id dd { font-weight: 600; color: #222; margin: 0; }
+
+/* Các tiêu đề lớn */
+h2 {
+  font-size: 2rem;
+  color: #111;
+  text-align: center;
+  margin: 60px 0 40px;
+  position: relative;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Hệ thống Lưới (Grid) cho các bài Lab và Kiến thức */
+.labs, .know {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Định dạng thẻ (Card) */
+.card, .know > div {
+  background: var(--card-bg);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f0f0f0;
+}
+.card:hover, .know > div:hover {
+  transform: translateY(-8px); /* Hiệu ứng nảy lên khi rê chuột */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+.card h3, .know h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 0 0 15px 0;
+}
+.card p { color: var(--text-muted); flex-grow: 1; margin-bottom: 25px; }
+
+/* Danh sách bên trong thẻ kiến thức */
+.know ul { padding-left: 20px; margin: 0; color: #444; }
+.know li { margin-bottom: 12px; }
+
+/* Nút bấm (Button) - Bo tròn hiện đại */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 102, 153, 0.25);
+  align-self: flex-start;
+}
+.btn:hover {
+  background: var(--primary-hover);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 153, 0.35);
+  text-decoration: none;
+}
+.hero .btn { align-self: center; } /* Căn giữa nút trong Hero */
+
+/* Thẻ Review tổng kết */
+.note {
+  background: var(--card-bg);
+  padding: 45px;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.03);
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+  border: 1px solid #f0f0f0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 80px;
+  background: #003355;
+  color: #a4c0d9;
+  font-size: 0.95rem;
+}

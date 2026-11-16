@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JavaScript Labs – Portfolio | Ngô Mỹ Châu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<nav class="bar"><span>JavaScript Labs</span><span><a href="#labs">Các bài Lab</a>  <a href="#know">Kiến thức</a>  <a href="#ecom">Ứng dụng TMĐT</a>  <a href="#review">Tự đánh giá</a></span></nav>
+<main class="wrap">
+
+<div class="hero">
+ <div>
+  <h1>JavaScript Labs: làm cho website bán hàng biết tương tác</h1>
+  <p>Ba bài Lab này giúp mình đi từ nền tảng ngôn ngữ (Lab 08), sang điều khiển trang web bằng DOM và sự kiện (Lab 09), rồi dùng jQuery để viết ngắn gọn hơn, làm hiệu ứng và lấy dữ liệu từ server (Lab 10). Nếu HTML là khung và CSS là diện mạo thì JavaScript là phần giúp trang phản hồi người dùng. Với website thương mại điện tử, đó là kiểm tra form, cập nhật giỏ hàng và hiển thị sản phẩm mà không cần tải lại trang.</p>
+  <div class="id">
+   <img class="avatar" src="avatar.jpg" alt="Ảnh đại diện Ngô Mỹ Châu" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar',textContent:'NC'}))">
+   <dl><dt>Họ và tên</dt><dd>NGÔ MỸ CHÂU</dd><dt>MSSV</dt><dd>31241027476</dd><dt>Lớp học phần</dt><dd>26C1INF50902702</dd>
+   <dt>GitHub</dt><dd><a href="https://github.com/ngomychau2006" target="_blank" rel="noopener">github.com/ngomychau2006</a></dd></dl>
+  </div>
+  <a class="btn" href="#labs">Xem 3 bài Lab</a>
+ </div>
+</div>
+
+<section id="labs"><h2>Các bài Lab</h2><div class="labs">
+ <div class="card"><h3>Lab 08</h3><p>JavaScript 1: Language Foundations<br><small>12 bài: JS nhúng/ngoài, noscript, Console, String/Date/Math, mảng, hàm, đối tượng, mảng đối tượng, travel posts.</small></p><a class="btn" href="Lab08/index.html">Mở Lab 08</a></div>
+ <div class="card"><h3>Lab 09</h3><p>JavaScript 2: DOM and Events<br><small>8 bài: chọn và sửa DOM, quan hệ node, tạo/xóa phần tử, click/mouseover/mouseout, load event, debug, form, validation.</small></p><a class="btn" href="Lab09/index.html">Mở Lab 09</a></div>
+ <div class="card"><h3>Lab 10</h3><p>JavaScript 3: jQuery<br><small>10 bài: cài jQuery, selectors, listeners, chèn DOM, animation, GET request, jqXHR.</small></p><a class="btn" href="Lab10/index.html">Mở Lab 10</a></div>
+</div></section>
+
+<section id="know"><h2>Kiến thức và kỹ năng đã học</h2>
+<div class="know">
+ <div><h3>Lab 08</h3><ul>
+  <li>Biết nhúng JavaScript vào HTML theo hai cách (trong trang và file .js riêng), và dùng <code>&lt;noscript&gt;</code> cho trường hợp trình duyệt tắt JS.</li>
+  <li>Dùng <code>console.log/warn/error</code> và gõ lệnh trực tiếp trong Console để kiểm tra biến, tìm lỗi chính tả.</li>
+  <li>Làm quen String, Date, Math, mảng (<code>push</code>, <code>unshift</code>, vòng lặp) và hiểu vì sao nên dùng <code>===</code> thay cho <code>==</code>.</li>
+  <li>Viết hàm có tham số, giá trị trả về, phạm vi biến (global/local), hàm ẩn danh và truyền hàm như một tham số.</li>
+  <li>Tạo đối tượng bằng object literal và constructor function, rồi quản lý một mảng các đối tượng (danh sách quốc gia).</li>
+ </ul></div>
+ <div><h3>Lab 09</h3><ul>
+  <li>Chọn phần tử bằng <code>getElementById</code>, <code>getElementsByTagName/ClassName</code>, <code>querySelector(All)</code> và duyệt cây DOM qua node cha, con, anh em.</li>
+  <li>Đọc và đổi <code>innerHTML</code>, thuộc tính, style của phần tử.</li>
+  <li>Tạo phần tử bằng <code>createElement</code>, thêm bằng <code>appendChild</code>, xóa bằng <code>removeChild</code>.</li>
+  <li>Gắn sự kiện bằng <code>addEventListener</code> (click, mouseover, mouseout, load, focus, blur, submit); hiểu vì sao phải đợi trang tải xong mới truy cập DOM.</li>
+  <li>Kiểm tra form bằng <code>preventDefault()</code> để chặn gửi khi còn ô trống, và dùng breakpoint trong DevTools để gỡ lỗi sự kiện.</li>
+ </ul></div>
+ <div><h3>Lab 10</h3><ul>
+  <li>Nạp jQuery từ CDN và có bản dự phòng trong repo khi CDN lỗi.</li>
+  <li>Dùng selectors cơ bản và nâng cao (<code>:password</code>, <code>:nth-child()</code>, <code>:contains()</code>) cùng <code>val()</code>, <code>html()</code>, <code>attr()</code>, <code>css()</code>, <code>addClass()</code>.</li>
+  <li>Gắn và gỡ sự kiện với <code>on()</code>/<code>off()</code>, nối nhiều sự kiện bằng chaining, bọc trong document ready.</li>
+  <li>Chèn phần tử bằng <code>before/after/append/prepend</code>; làm hiệu ứng <code>fade</code>, <code>slide</code> và <code>animate()</code> nối tiếp nhiều bước.</li>
+  <li>Gọi <code>$.get()</code>, hiển thị kết quả bằng <code>$.each()</code>, xử lý <code>done/fail/always</code> của jqXHR và hiện thanh loading trong lúc chờ.</li>
+ </ul></div>
+</div></section>
+
+<section id="ecom"><h2>Liên hệ với ứng dụng thương mại điện tử</h2><div class="labs">
+ <div class="card"><h3>Form đăng ký</h3><p>Bài 9.7 đổi màu ô đang nhập, bài 9.8 chặn gửi form khi còn ô trống và báo tên các ô thiếu. Đây là nền để kiểm tra email, số điện thoại, mật khẩu khi khách tạo tài khoản.</p></div>
+ <div class="card"><h3>Giỏ hàng và đơn hàng</h3><p>Bài 8.9 tính thuế theo từng đơn, bài 8.10 tạo đối tượng <code>order</code> có tổng tiền, bài 8.11 lưu danh sách bằng mảng đối tượng. Cùng cách nghĩ đó dùng cho sản phẩm, số lượng và tổng tiền trong giỏ.</p></div>
+ <div class="card"><h3>Hiển thị sản phẩm</h3><p>Bài 10.7 rê chuột vào ảnh nhỏ để hiện ảnh lớn kèm chú thích, bài 10.6 và 10.8 làm hiệu ứng ẩn/hiện, bài 10.10 có thanh loading khi tải danh sách từ server, giống trang danh mục sản phẩm.</p></div>
+</div></section>
+
+<section id="review"><h2>Tự đánh giá</h2>
+<p class="note">Qua ba bài Lab, mình hiểu JavaScript là cách để trang web phản hồi người dùng. Mình nắm được biến, hàm, đối tượng, cách chọn và sửa phần tử DOM, bắt sự kiện, rồi viết gọn hơn bằng jQuery. Lab 09 hữu ích nhất vì xử lý sự kiện và kiểm tra form áp dụng được ngay cho trang đăng ký. Lab 10 khó nhất, nhất là GET request và jqXHR, vì dữ liệu trả về không đồng bộ và khi dịch vụ lỗi phải có dữ liệu dự phòng. Mình có thể áp dụng để làm kiểm tra form đăng ký, tăng giảm số lượng trong giỏ hàng và xem nhanh ảnh sản phẩm khi rê chuột. Mình cần luyện thêm debug bằng DevTools, tổ chức code gọn hơn và tìm hiểu fetch, async/await.</p></section>
+
+</main><footer>© NGÔ MỸ CHÂU – Phát triển ứng dụng TMĐT – UEH</footer>
+<script src="js/main.js"></script></body></html>

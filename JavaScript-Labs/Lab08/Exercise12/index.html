@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Travel Posts</title>
+
+    <!-- Bootstrap 3 (CDN) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <script type="text/javascript" language="javascript" src="js/travel-data.js"></script>
+    <script type="text/javascript" language="javascript" src="js/travel-functions.js"></script>
+</head>
+<body>
+
+<div class="container">  <!-- start main content container -->
+   <div class="row">  <!-- start main content row -->
+      <div class="col-md-3">  <!-- start left navigation rail column -->
+
+         <div class="panel panel-info">
+           <div class="panel-heading">Continents</div>
+           <script>outputContinents();</script>
+         </div>  <!-- end continents panel -->
+
+         <div class="panel panel-info">
+           <div class="panel-heading">Popular Countries</div>
+           <script>outputCountries("Canada");</script>
+         </div>  <!-- end countries panel -->
+      </div>  <!-- end left navigation rail -->
+
+      <div class="col-md-9">  <!-- start main content column -->
+         <ol class="breadcrumb">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Browse</a></li>
+           <li class="active">Posts</li>
+         </ol>
+
+         <div class="jumbotron" id="postJumbo">
+           <h1>Posts</h1>
+           <p>Read other travellers' posts ... or create your own.</p>
+           <p><a class="btn btn-warning btn-lg">Learn more &raquo;</a></p>
+         </div>
+
+         <!-- start post summaries -->
+         <div class="postlist">
+           <script>outputPosts();</script>
+         </div>
+
+         <script>outputPagination(4, 9);</script>
+
+      </div>  <!-- end main content column -->
+   </div>  <!-- end main content row -->
+</div>   <!-- end main content container -->
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Exercise 8.1 - Enabling/Disabling JavaScript</title>
+   <link rel="stylesheet" type="text/css" href="css/lab08.css" />
+</head>
+<body>
+
+<header>
+  <h1>Exercise 8.1 &mdash; Enabling/Disabling JavaScript</h1>
+</header>
+
+<h2>Result of the JavaScript test:</h2>
+
+<!-- Trang test JavaScript đơn giản (thay cho http://examples.funwebdev.com/JavaScriptTest.php) -->
+<p id="jsTest">
+   <noscript>You have JavaScript disabled</noscript>
+</p>
+
+<script>
+   // Nếu JavaScript đang bật thì đoạn này chạy và in thông báo
+   document.getElementById("jsTest").innerHTML = "You have JavaScript enabled";
+</script>
+
+<h3>How to test</h3>
+<ol>
+   <li>Open this page with JavaScript enabled: you see "You have JavaScript enabled".</li>
+   <li>Turn JavaScript off in your browser, refresh: you see "You have JavaScript disabled".</li>
+   <li>Original test page: <a href="http://examples.funwebdev.com/JavaScriptTest.php">examples.funwebdev.com/JavaScriptTest.php</a></li>
+</ol>
+
+</body>
+</html>
