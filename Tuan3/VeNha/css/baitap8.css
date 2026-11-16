@@ -1,0 +1,42 @@
+body{margin:0;font-family:"Times New Roman",serif}
+
+/* i. Khung chứa lớn */
+#root{width:1024px;max-width:100%;margin:0 auto;text-align:center}
+
+/* ii. site-header */
+#site-header{
+    margin:20px 0 25px;padding:12px 0;
+    text-align:center;
+    background-color:#ccc;
+    color:#fff;font-size:30px;
+    text-shadow:2px 2px 3px #333;
+}
+#site-header span::before{            /* logo con dơi bên trái chữ */
+    content:"";display:inline-block;vertical-align:middle;
+    width:50px;height:20px;margin-right:10px;
+    background:url("../imgs/logo.png") no-repeat center/contain;
+}
+
+/* iii. li trong superheroes */
+.superheroes{list-style:none;margin:0;padding:0;font-size:0}
+.superheroes li{
+    display:inline-block;vertical-align:top;position:relative;
+    width:170px;margin:0 3px;
+    transition:width .3s;
+}
+/* tên anh hùng nằm đè lên đầu hình */
+.superheroes .hero-header{
+    position:absolute;top:0;left:0;width:100%;
+    padding:6px 0;font-size:14px;
+    color:rgba(255,255,255,.55);text-shadow:1px 1px 2px #000;
+}
+/* iv. Hình */
+.superheroes img{display:block;max-width:100%;border:2px solid #fff;border-radius:12px;box-sizing:border-box}
+/* v. Thẻ a (Read more) */
+.superheroes a{display:none;width:100%;margin-top:4px;padding:6px 0;box-sizing:border-box;background:#888;color:#fff;font-size:12px;text-decoration:none}
+
+/* vi. Hover */
+.superheroes li:hover{width:215px}                      /* tăng chiều rộng */
+.superheroes li:hover .hero-header{color:#fff;background:rgba(0,0,0,.7);border-radius:12px 12px 0 0}
+.superheroes li:hover a{display:block}                  /* hiện Read more */
+.superheroes li a:hover{text-decoration:underline}      /* gạch chân */
