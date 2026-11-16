@@ -76,7 +76,6 @@ Mỗi `ExerciseXX/` có `index.html` riêng, cùng thư mục `css/`, `js/` và 
 | 10.10 | Xử lý jqXHR: `done()`, `fail()`, `always()` |
 
 ## GitHub Pages
-Thay `<TEN-REPO>` bằng tên repository của bạn:
 - Trang chủ: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/
 - Lab 08: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/Lab08/
 - Lab 09: https://ngomychau2006.github.io/ecommerce-ui-improvement/JavaScript-Labs/Lab09/
@@ -87,8 +86,3 @@ Thay `<TEN-REPO>` bằng tên repository của bạn:
 2. Bấm **Mở Lab 08 / 09 / 10** để vào mục lục của từng Lab.
 3. Trong mục lục, bấm vào từng Exercise để xem kết quả chạy.
 4. Mở F12 (Console) để xem log ở các bài 8.5, 9.2, 10.1.
-
-Lưu ý khi chạy:
-- Một số bài tải Bootstrap, Font Awesome qua CDN nên cần có Internet (8.12, 9.x, 10.1–10.3).
-- Lab 10 nạp jQuery từ CDN, nếu lỗi sẽ tự dùng bản `js/jquery-3.1.1.min.js` trong từng bài.
-- Bài 10.9 và 10.10 gọi web service của sách; nếu service không truy cập được, trang hiển thị dữ liệu mẫu thay thế.
