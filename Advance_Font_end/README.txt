@@ -14,9 +14,8 @@ CÁCH CHẠY
 LINK GITHUB PAGE
 1. Bài 1 – E-commerce:
 https://ngomychau2006.github.io/ecommerce-ui-improvement/Advance_Font_end/01-ecommerce/
-
-2. Bài 2 – jQuery LMS:
-https://ngomychau2006.github.io/ecommerce-ui-improvement/Advance_Font_end/02-jquery-lms/
-
 3. Bài 3 – Flappy Bird:
 https://ngomychau2006.github.io/ecommerce-ui-improvement/Advance_Font_end/03-flappy-bird/
+
+LINK SOURCE CODE BÀI 2
+https://github.com/ngomychau2006/ecommerce-ui-improvement/tree/main/Advance_Font_end/02-jquery-lms
