@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Dream - Flappy Bird</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">A LITTLE GAME FULL OF DREAMS</p>
+            <h1>Pink Dream <span>♡</span></h1>
+            <p class="subtitle">Fly high, little bird!</p>
+        </header>
+
+        <section id="container" class="game-container day">
+
+            <div class="sun"></div>
+            <div class="cloud cloud-one"></div>
+            <div class="cloud cloud-two"></div>
+            <div class="cloud cloud-three"></div>
+
+            <div class="game-topbar">
+                <div class="score-card">
+                    <span class="score-label">SCORE</span>
+                    <span id="score">0</span>
+                </div>
+
+                <div class="level-card">
+                    <span class="score-label">LEVEL</span>
+                    <span id="level">1</span>
+                </div>
+
+                <div class="best-card">
+                    <span class="score-label">BEST</span>
+                    <span id="best_score">0</span>
+                </div>
+            </div>
+
+            <div id="bird" aria-label="Pink bird">
+                <div class="bird-wing"></div>
+                <div class="bird-eye"></div>
+                <div class="bird-beak"></div>
+                <div class="bird-blush"></div>
+                <div class="bird-bow"></div>
+            </div>
+
+            <div id="trail_layer"></div>
+            <div id="pipe_layer"></div>
+
+            <div class="ground">
+                <div class="ground-pattern"></div>
+            </div>
+
+            <!-- Màn hình bắt đầu -->
+            <div id="start_screen" class="game-overlay">
+                <div class="popup">
+                    <div class="popup-icon">🐥</div>
+                    <p class="popup-tag">WELCOME TO</p>
+                    <h2>Pink Dream</h2>
+                    <p class="popup-description">
+                        Help the little bird fly through the clouds!
+                    </p>
+                    <button id="play_btn" class="main-button">
+                        Let's Fly <span>♡</span>
+                    </button>
+                    <p class="control-hint">Press SPACE / ↑ or tap to fly</p>
+                </div>
+            </div>
+
+            <!-- Màn hình kết thúc -->
+            <div id="end_screen" class="game-overlay hidden">
+                <div class="popup end-popup">
+                    <div class="popup-icon">💗</div>
+                    <p class="popup-tag">GAME OVER</p>
+                    <h2>Oh no!</h2>
+                    <p class="popup-description">Your little bird needs a break.</p>
+
+                    <div class="result-box">
+                        <div>
+                            <span class="result-label">YOUR SCORE</span>
+                            <strong id="final_score">0</strong>
+                        </div>
+                        <div>
+                            <span class="result-label">BEST SCORE</span>
+                            <strong id="final_best">0</strong>
+                        </div>
+                    </div>
+
+                    <button id="restart_btn" class="main-button">
+                        Play Again <span>↻</span>
+                    </button>
+                    <p class="control-hint">Don't give up. Try again!</p>
+                </div>
+            </div>
+
+            <div id="combo_message"></div>
+            <div id="level_message"></div>
+
+        </section>
+
+        <footer class="page-footer">
+            <span>✦</span> Made with love and a little bit of magic <span>✦</span>
+        </footer>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
